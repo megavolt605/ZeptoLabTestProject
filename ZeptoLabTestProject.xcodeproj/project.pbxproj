@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		840162AB17DEE48A00EF5DEF /* ZLDynamicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 840162AA17DEE48A00EF5DEF /* ZLDynamicObject.m */; };
+		84CB584A17E037D300A4E433 /* ZLGameViewInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB584917E037D300A4E433 /* ZLGameViewInfo.m */; };
+		84DD321C17F019EC004C84D5 /* ZLConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DD321B17F019EC004C84D5 /* ZLConsts.m */; };
+		84E78F1F17D9E12A0098A3D6 /* ZLObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E78F1E17D9E12A0098A3D6 /* ZLObject.m */; };
+		84E78F2217D9E2930098A3D6 /* ZLShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E78F2117D9E2930098A3D6 /* ZLShape.m */; };
+		84E78F2617D9E2B00098A3D6 /* ZLPlayerShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E78F2517D9E2B00098A3D6 /* ZLPlayerShape.m */; };
+		84E78F2917D9E2BB0098A3D6 /* ZLStoneShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E78F2817D9E2BB0098A3D6 /* ZLStoneShape.m */; };
+		84E78F2C17D9E2C90098A3D6 /* ZLGameShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E78F2B17D9E2C90098A3D6 /* ZLGameShape.m */; };
+		84FCDB7117DEF9D900F81231 /* ZLBullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FCDB7017DEF9D900F81231 /* ZLBullet.m */; };
+		84FCDB7417DF01F100F81231 /* ZLBulletShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FCDB7317DF01F100F81231 /* ZLBulletShape.m */; };
+		B30B6C8217EDDC27000D2D49 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30B6C8117EDDC27000D2D49 /* CoreMotion.framework */; };
+		B346FB1117FB32790085B887 /* ZLGameAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = B346FB1017FB32790085B887 /* ZLGameAudio.m */; };
+		B346FB1317FB339F0085B887 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B346FB1217FB339F0085B887 /* AudioToolbox.framework */; };
+		B346FB1917FB39300085B887 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B346FB1817FB39300085B887 /* AVFoundation.framework */; };
+		B346FB2017FB3B020085B887 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B346FB1C17FB3B020085B887 /* background.mp3 */; };
+		B346FB2117FB3B020085B887 /* collision.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B346FB1D17FB3B020085B887 /* collision.m4a */; };
+		B346FB2217FB3B020085B887 /* death.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B346FB1E17FB3B020085B887 /* death.m4a */; };
+		B346FB2317FB3B020085B887 /* missle.m4a in Resources */ = {isa = PBXBuildFile; fileRef = B346FB1F17FB3B020085B887 /* missle.m4a */; };
+		B346FB2617FB43740085B887 /* volume-mute.png in Resources */ = {isa = PBXBuildFile; fileRef = B346FB2417FB43740085B887 /* volume-mute.png */; };
+		B346FB2717FB43740085B887 /* volume-unmute.png in Resources */ = {isa = PBXBuildFile; fileRef = B346FB2517FB43740085B887 /* volume-unmute.png */; };
+		B346FB2917FB66530085B887 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = B346FB2817FB66530085B887 /* readme.md */; };
+		B34D3FB417D8DCF2006B6A92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34D3FB317D8DCF2006B6A92 /* UIKit.framework */; };
+		B34D3FB617D8DCF2006B6A92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34D3FB517D8DCF2006B6A92 /* Foundation.framework */; };
+		B34D3FB817D8DCF2006B6A92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34D3FB717D8DCF2006B6A92 /* CoreGraphics.framework */; };
+		B34D3FBE17D8DCF2006B6A92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B34D3FBC17D8DCF2006B6A92 /* InfoPlist.strings */; };
+		B34D3FC017D8DCF2006B6A92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B34D3FBF17D8DCF2006B6A92 /* main.m */; };
+		B34D3FC417D8DCF2006B6A92 /* ZLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B34D3FC317D8DCF2006B6A92 /* ZLAppDelegate.m */; };
+		B34D3FCD17D8DCF2006B6A92 /* ZLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34D3FCC17D8DCF2006B6A92 /* ZLViewController.m */; };
+		B34D3FD017D8DCF2006B6A92 /* ZLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34D3FCE17D8DCF2006B6A92 /* ZLViewController.xib */; };
+		B34D3FD717D8DD03006B6A92 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34D3FD617D8DD03006B6A92 /* OpenGLES.framework */; };
+		B34D3FDA17D8DDE4006B6A92 /* ZLView.m in Sources */ = {isa = PBXBuildFile; fileRef = B34D3FD917D8DDE4006B6A92 /* ZLView.m */; };
+		B34D3FDC17D8E555006B6A92 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B34D3FDB17D8E555006B6A92 /* QuartzCore.framework */; };
+		B35D5CED17F70B7400F22FD3 /* ZLCollisionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CEC17F70B7400F22FD3 /* ZLCollisionObject.m */; };
+		B35D5CF017F70CF000F22FD3 /* ZLStoneNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CEF17F70CF000F22FD3 /* ZLStoneNormal.m */; };
+		B35D5CF317F70CFC00F22FD3 /* ZLStoneSmall.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CF217F70CFC00F22FD3 /* ZLStoneSmall.m */; };
+		B35D5CF617F70D7500F22FD3 /* ZLBulletNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CF517F70D7500F22FD3 /* ZLBulletNormal.m */; };
+		B35D5CF917F70D8F00F22FD3 /* ZLBulletBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CF817F70D8F00F22FD3 /* ZLBulletBonus.m */; };
+		B35D5CFC17F70E0900F22FD3 /* ZLStoneShapeNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CFB17F70E0900F22FD3 /* ZLStoneShapeNormal.m */; };
+		B35D5CFF17F70E1800F22FD3 /* ZLStoneShapeSmall.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5CFE17F70E1800F22FD3 /* ZLStoneShapeSmall.m */; };
+		B35D5D0217F71D5A00F22FD3 /* missile_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = B35D5D0017F71D5A00F22FD3 /* missile_gray.png */; };
+		B35D5D0317F71D5A00F22FD3 /* missile_red.png in Resources */ = {isa = PBXBuildFile; fileRef = B35D5D0117F71D5A00F22FD3 /* missile_red.png */; };
+		B35D5D0517F721D800F22FD3 /* missile_green.png in Resources */ = {isa = PBXBuildFile; fileRef = B35D5D0417F721D800F22FD3 /* missile_green.png */; };
+		B35D5D0817F72EE200F22FD3 /* ZLStoneBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5D0717F72EE200F22FD3 /* ZLStoneBonus.m */; };
+		B35D5D0B17F72F3300F22FD3 /* ZLStonePenalty.m in Sources */ = {isa = PBXBuildFile; fileRef = B35D5D0A17F72F3300F22FD3 /* ZLStonePenalty.m */; };
+		B36C40EE17F5CCD20011CBBC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E017F5CCD20011CBBC /* Default.png */; };
+		B36C40F017F5CCD20011CBBC /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E217F5CCD20011CBBC /* Default~ipad.png */; };
+		B36C40F217F5CCD20011CBBC /* spaceship29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E417F5CCD20011CBBC /* spaceship29x29.png */; };
+		B36C40F317F5CCD20011CBBC /* spaceship40x40.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E517F5CCD20011CBBC /* spaceship40x40.png */; };
+		B36C40F417F5CCD20011CBBC /* spaceship50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E617F5CCD20011CBBC /* spaceship50x50.png */; };
+		B36C40F517F5CCD20011CBBC /* spaceship58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E717F5CCD20011CBBC /* spaceship58x58.png */; };
+		B36C40F617F5CCD20011CBBC /* spaceship72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E817F5CCD20011CBBC /* spaceship72x72.png */; };
+		B36C40F717F5CCD20011CBBC /* spaceship76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40E917F5CCD20011CBBC /* spaceship76x76.png */; };
+		B36C40F817F5CCD20011CBBC /* spaceship80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40EA17F5CCD20011CBBC /* spaceship80x80.png */; };
+		B36C40F917F5CCD20011CBBC /* spaceship100x100.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40EB17F5CCD20011CBBC /* spaceship100x100.png */; };
+		B36C40FA17F5CCD20011CBBC /* spaceship144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40EC17F5CCD20011CBBC /* spaceship144x144.png */; };
+		B36C40FB17F5CCD20011CBBC /* spaceship152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40ED17F5CCD20011CBBC /* spaceship152x152.png */; };
+		B36C410017F5D06D0011CBBC /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40FC17F5D06D0011CBBC /* pause.png */; };
+		B36C410117F5D06D0011CBBC /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40FD17F5D06D0011CBBC /* play.png */; };
+		B36C410217F5D06D0011CBBC /* restart.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40FE17F5D06D0011CBBC /* restart.png */; };
+		B36C410317F5D06D0011CBBC /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C40FF17F5D06D0011CBBC /* stop.png */; };
+		B36C410617F5D1530011CBBC /* missile.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C410417F5D1530011CBBC /* missile.png */; };
+		B36C410717F5D1530011CBBC /* move.png in Resources */ = {isa = PBXBuildFile; fileRef = B36C410517F5D1530011CBBC /* move.png */; };
+		B3A7A33A17F858A800C4FEE6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3A7A33917F858A800C4FEE6 /* ImageIO.framework */; };
+		B3AEC37B17D9101800D4B039 /* ZLPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC37A17D9101800D4B039 /* ZLPlayer.m */; };
+		B3AEC37E17D9103200D4B039 /* ZLStone.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC37D17D9103200D4B039 /* ZLStone.m */; };
+		B3AEC38417D9104C00D4B039 /* ZLGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B3AEC38317D9104C00D4B039 /* ZLGame.m */; };
+		B3D0C69317FAB928003A685D /* ZLBulletPenalty.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D0C69217FAB928003A685D /* ZLBulletPenalty.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		840162A917DEE48A00EF5DEF /* ZLDynamicObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLDynamicObject.h; sourceTree = "<group>"; };
+		840162AA17DEE48A00EF5DEF /* ZLDynamicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLDynamicObject.m; sourceTree = "<group>"; };
+		84CB584817E037D200A4E433 /* ZLGameViewInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGameViewInfo.h; sourceTree = "<group>"; };
+		84CB584917E037D300A4E433 /* ZLGameViewInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGameViewInfo.m; sourceTree = "<group>"; };
+		84DD321A17F0161E004C84D5 /* ZLConsts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLConsts.h; sourceTree = "<group>"; };
+		84DD321B17F019EC004C84D5 /* ZLConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLConsts.m; sourceTree = "<group>"; };
+		84E78F1D17D9E12A0098A3D6 /* ZLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLObject.h; sourceTree = "<group>"; };
+		84E78F1E17D9E12A0098A3D6 /* ZLObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLObject.m; sourceTree = "<group>"; };
+		84E78F2017D9E2930098A3D6 /* ZLShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLShape.h; sourceTree = "<group>"; };
+		84E78F2117D9E2930098A3D6 /* ZLShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLShape.m; sourceTree = "<group>"; };
+		84E78F2417D9E2B00098A3D6 /* ZLPlayerShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPlayerShape.h; sourceTree = "<group>"; };
+		84E78F2517D9E2B00098A3D6 /* ZLPlayerShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPlayerShape.m; sourceTree = "<group>"; };
+		84E78F2717D9E2BB0098A3D6 /* ZLStoneShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStoneShape.h; sourceTree = "<group>"; };
+		84E78F2817D9E2BB0098A3D6 /* ZLStoneShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStoneShape.m; sourceTree = "<group>"; };
+		84E78F2A17D9E2C90098A3D6 /* ZLGameShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGameShape.h; sourceTree = "<group>"; };
+		84E78F2B17D9E2C90098A3D6 /* ZLGameShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGameShape.m; sourceTree = "<group>"; };
+		84FCDB6F17DEF9D900F81231 /* ZLBullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBullet.h; sourceTree = "<group>"; };
+		84FCDB7017DEF9D900F81231 /* ZLBullet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBullet.m; sourceTree = "<group>"; };
+		84FCDB7217DF01F100F81231 /* ZLBulletShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBulletShape.h; sourceTree = "<group>"; };
+		84FCDB7317DF01F100F81231 /* ZLBulletShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBulletShape.m; sourceTree = "<group>"; };
+		B30B6C8117EDDC27000D2D49 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B346FB0F17FB32790085B887 /* ZLGameAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGameAudio.h; sourceTree = "<group>"; };
+		B346FB1017FB32790085B887 /* ZLGameAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGameAudio.m; sourceTree = "<group>"; };
+		B346FB1217FB339F0085B887 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B346FB1417FB387A0085B887 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B346FB1617FB38DC0085B887 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		B346FB1817FB39300085B887 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B346FB1C17FB3B020085B887 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background.mp3; path = ZeptoLabTestProject/Resources/background.mp3; sourceTree = "<group>"; };
+		B346FB1D17FB3B020085B887 /* collision.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = collision.m4a; path = ZeptoLabTestProject/Resources/collision.m4a; sourceTree = "<group>"; };
+		B346FB1E17FB3B020085B887 /* death.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = death.m4a; path = ZeptoLabTestProject/Resources/death.m4a; sourceTree = "<group>"; };
+		B346FB1F17FB3B020085B887 /* missle.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = missle.m4a; path = ZeptoLabTestProject/Resources/missle.m4a; sourceTree = "<group>"; };
+		B346FB2417FB43740085B887 /* volume-mute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volume-mute.png"; path = "ZeptoLabTestProject/Resources/volume-mute.png"; sourceTree = "<group>"; };
+		B346FB2517FB43740085B887 /* volume-unmute.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "volume-unmute.png"; path = "ZeptoLabTestProject/Resources/volume-unmute.png"; sourceTree = "<group>"; };
+		B346FB2817FB66530085B887 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = SOURCE_ROOT; };
+		B34D3FB017D8DCF2006B6A92 /* ZeptoLabTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeptoLabTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34D3FB317D8DCF2006B6A92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B34D3FB517D8DCF2006B6A92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B34D3FB717D8DCF2006B6A92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B34D3FBB17D8DCF2006B6A92 /* ZeptoLabTestProject-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZeptoLabTestProject-Info.plist"; sourceTree = "<group>"; };
+		B34D3FBD17D8DCF2006B6A92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B34D3FBF17D8DCF2006B6A92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B34D3FC117D8DCF2006B6A92 /* ZeptoLabTestProject-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZeptoLabTestProject-Prefix.pch"; sourceTree = "<group>"; };
+		B34D3FC217D8DCF2006B6A92 /* ZLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLAppDelegate.h; sourceTree = "<group>"; };
+		B34D3FC317D8DCF2006B6A92 /* ZLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLAppDelegate.m; sourceTree = "<group>"; };
+		B34D3FCB17D8DCF2006B6A92 /* ZLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLViewController.h; sourceTree = "<group>"; };
+		B34D3FCC17D8DCF2006B6A92 /* ZLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLViewController.m; sourceTree = "<group>"; };
+		B34D3FCF17D8DCF2006B6A92 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ZLViewController.xib; sourceTree = "<group>"; };
+		B34D3FD617D8DD03006B6A92 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B34D3FD817D8DDE4006B6A92 /* ZLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLView.h; sourceTree = "<group>"; };
+		B34D3FD917D8DDE4006B6A92 /* ZLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLView.m; sourceTree = "<group>"; };
+		B34D3FDB17D8E555006B6A92 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B35D5CEB17F70B7400F22FD3 /* ZLCollisionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCollisionObject.h; sourceTree = "<group>"; };
+		B35D5CEC17F70B7400F22FD3 /* ZLCollisionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCollisionObject.m; sourceTree = "<group>"; };
+		B35D5CEE17F70CF000F22FD3 /* ZLStoneNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStoneNormal.h; sourceTree = "<group>"; };
+		B35D5CEF17F70CF000F22FD3 /* ZLStoneNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStoneNormal.m; sourceTree = "<group>"; };
+		B35D5CF117F70CFC00F22FD3 /* ZLStoneSmall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStoneSmall.h; sourceTree = "<group>"; };
+		B35D5CF217F70CFC00F22FD3 /* ZLStoneSmall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStoneSmall.m; sourceTree = "<group>"; };
+		B35D5CF417F70D7500F22FD3 /* ZLBulletNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBulletNormal.h; sourceTree = "<group>"; };
+		B35D5CF517F70D7500F22FD3 /* ZLBulletNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBulletNormal.m; sourceTree = "<group>"; };
+		B35D5CF717F70D8F00F22FD3 /* ZLBulletBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBulletBonus.h; sourceTree = "<group>"; };
+		B35D5CF817F70D8F00F22FD3 /* ZLBulletBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBulletBonus.m; sourceTree = "<group>"; };
+		B35D5CFA17F70E0900F22FD3 /* ZLStoneShapeNormal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStoneShapeNormal.h; sourceTree = "<group>"; };
+		B35D5CFB17F70E0900F22FD3 /* ZLStoneShapeNormal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStoneShapeNormal.m; sourceTree = "<group>"; };
+		B35D5CFD17F70E1800F22FD3 /* ZLStoneShapeSmall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStoneShapeSmall.h; sourceTree = "<group>"; };
+		B35D5CFE17F70E1800F22FD3 /* ZLStoneShapeSmall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStoneShapeSmall.m; sourceTree = "<group>"; };
+		B35D5D0017F71D5A00F22FD3 /* missile_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = missile_gray.png; path = ZeptoLabTestProject/Resources/missile_gray.png; sourceTree = "<group>"; };
+		B35D5D0117F71D5A00F22FD3 /* missile_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = missile_red.png; path = ZeptoLabTestProject/Resources/missile_red.png; sourceTree = "<group>"; };
+		B35D5D0417F721D800F22FD3 /* missile_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = missile_green.png; path = ZeptoLabTestProject/Resources/missile_green.png; sourceTree = "<group>"; };
+		B35D5D0617F72EE200F22FD3 /* ZLStoneBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStoneBonus.h; sourceTree = "<group>"; };
+		B35D5D0717F72EE200F22FD3 /* ZLStoneBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStoneBonus.m; sourceTree = "<group>"; };
+		B35D5D0917F72F3300F22FD3 /* ZLStonePenalty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStonePenalty.h; sourceTree = "<group>"; };
+		B35D5D0A17F72F3300F22FD3 /* ZLStonePenalty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStonePenalty.m; sourceTree = "<group>"; };
+		B36C40E017F5CCD20011CBBC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ZeptoLabTestProject/Resources/Default.png; sourceTree = "<group>"; };
+		B36C40E217F5CCD20011CBBC /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~ipad.png"; path = "ZeptoLabTestProject/Resources/Default~ipad.png"; sourceTree = "<group>"; };
+		B36C40E417F5CCD20011CBBC /* spaceship29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship29x29.png; path = ZeptoLabTestProject/Resources/spaceship29x29.png; sourceTree = "<group>"; };
+		B36C40E517F5CCD20011CBBC /* spaceship40x40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship40x40.png; path = ZeptoLabTestProject/Resources/spaceship40x40.png; sourceTree = "<group>"; };
+		B36C40E617F5CCD20011CBBC /* spaceship50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship50x50.png; path = ZeptoLabTestProject/Resources/spaceship50x50.png; sourceTree = "<group>"; };
+		B36C40E717F5CCD20011CBBC /* spaceship58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship58x58.png; path = ZeptoLabTestProject/Resources/spaceship58x58.png; sourceTree = "<group>"; };
+		B36C40E817F5CCD20011CBBC /* spaceship72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship72x72.png; path = ZeptoLabTestProject/Resources/spaceship72x72.png; sourceTree = "<group>"; };
+		B36C40E917F5CCD20011CBBC /* spaceship76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship76x76.png; path = ZeptoLabTestProject/Resources/spaceship76x76.png; sourceTree = "<group>"; };
+		B36C40EA17F5CCD20011CBBC /* spaceship80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship80x80.png; path = ZeptoLabTestProject/Resources/spaceship80x80.png; sourceTree = "<group>"; };
+		B36C40EB17F5CCD20011CBBC /* spaceship100x100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship100x100.png; path = ZeptoLabTestProject/Resources/spaceship100x100.png; sourceTree = "<group>"; };
+		B36C40EC17F5CCD20011CBBC /* spaceship144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship144x144.png; path = ZeptoLabTestProject/Resources/spaceship144x144.png; sourceTree = "<group>"; };
+		B36C40ED17F5CCD20011CBBC /* spaceship152x152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spaceship152x152.png; path = ZeptoLabTestProject/Resources/spaceship152x152.png; sourceTree = "<group>"; };
+		B36C40FC17F5D06D0011CBBC /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ZeptoLabTestProject/Resources/pause.png; sourceTree = "<group>"; };
+		B36C40FD17F5D06D0011CBBC /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = ZeptoLabTestProject/Resources/play.png; sourceTree = "<group>"; };
+		B36C40FE17F5D06D0011CBBC /* restart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = restart.png; path = ZeptoLabTestProject/Resources/restart.png; sourceTree = "<group>"; };
+		B36C40FF17F5D06D0011CBBC /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = ZeptoLabTestProject/Resources/stop.png; sourceTree = "<group>"; };
+		B36C410417F5D1530011CBBC /* missile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = missile.png; path = ZeptoLabTestProject/Resources/missile.png; sourceTree = "<group>"; };
+		B36C410517F5D1530011CBBC /* move.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = move.png; path = ZeptoLabTestProject/Resources/move.png; sourceTree = "<group>"; };
+		B3A7A33917F858A800C4FEE6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		B3AEC37617D8FD0500D4B039 /* ZLTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLTools.h; sourceTree = "<group>"; };
+		B3AEC37917D9101800D4B039 /* ZLPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPlayer.h; sourceTree = "<group>"; };
+		B3AEC37A17D9101800D4B039 /* ZLPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPlayer.m; sourceTree = "<group>"; };
+		B3AEC37C17D9103200D4B039 /* ZLStone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLStone.h; sourceTree = "<group>"; };
+		B3AEC37D17D9103200D4B039 /* ZLStone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLStone.m; sourceTree = "<group>"; };
+		B3AEC38217D9104C00D4B039 /* ZLGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLGame.h; sourceTree = "<group>"; };
+		B3AEC38317D9104C00D4B039 /* ZLGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLGame.m; sourceTree = "<group>"; };
+		B3D0C69117FAB928003A685D /* ZLBulletPenalty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLBulletPenalty.h; sourceTree = "<group>"; };
+		B3D0C69217FAB928003A685D /* ZLBulletPenalty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLBulletPenalty.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B34D3FAD17D8DCF2006B6A92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B346FB1917FB39300085B887 /* AVFoundation.framework in Frameworks */,
+				B346FB1317FB339F0085B887 /* AudioToolbox.framework in Frameworks */,
+				B3A7A33A17F858A800C4FEE6 /* ImageIO.framework in Frameworks */,
+				B30B6C8217EDDC27000D2D49 /* CoreMotion.framework in Frameworks */,
+				B34D3FDC17D8E555006B6A92 /* QuartzCore.framework in Frameworks */,
+				B34D3FD717D8DD03006B6A92 /* OpenGLES.framework in Frameworks */,
+				B34D3FB417D8DCF2006B6A92 /* UIKit.framework in Frameworks */,
+				B34D3FB617D8DCF2006B6A92 /* Foundation.framework in Frameworks */,
+				B34D3FB817D8DCF2006B6A92 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84E78F2317D9E2980098A3D6 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				84E78F2017D9E2930098A3D6 /* ZLShape.h */,
+				84E78F2117D9E2930098A3D6 /* ZLShape.m */,
+				84E78F2417D9E2B00098A3D6 /* ZLPlayerShape.h */,
+				84E78F2517D9E2B00098A3D6 /* ZLPlayerShape.m */,
+				84E78F2717D9E2BB0098A3D6 /* ZLStoneShape.h */,
+				84E78F2817D9E2BB0098A3D6 /* ZLStoneShape.m */,
+				B35D5CFA17F70E0900F22FD3 /* ZLStoneShapeNormal.h */,
+				B35D5CFB17F70E0900F22FD3 /* ZLStoneShapeNormal.m */,
+				B35D5CFD17F70E1800F22FD3 /* ZLStoneShapeSmall.h */,
+				B35D5CFE17F70E1800F22FD3 /* ZLStoneShapeSmall.m */,
+				84FCDB7217DF01F100F81231 /* ZLBulletShape.h */,
+				84FCDB7317DF01F100F81231 /* ZLBulletShape.m */,
+				84E78F2A17D9E2C90098A3D6 /* ZLGameShape.h */,
+				84E78F2B17D9E2C90098A3D6 /* ZLGameShape.m */,
+			);
+			name = Shapes;
+			sourceTree = "<group>";
+		};
+		B34D3FA717D8DCF2006B6A92 = {
+			isa = PBXGroup;
+			children = (
+				B34D3FB917D8DCF2006B6A92 /* ZeptoLabTestProject */,
+				B34D3FB217D8DCF2006B6A92 /* Frameworks */,
+				B34D3FB117D8DCF2006B6A92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B34D3FB117D8DCF2006B6A92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B34D3FB017D8DCF2006B6A92 /* ZeptoLabTestProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B34D3FB217D8DCF2006B6A92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B346FB1817FB39300085B887 /* AVFoundation.framework */,
+				B346FB1617FB38DC0085B887 /* AudioUnit.framework */,
+				B346FB1417FB387A0085B887 /* CoreAudio.framework */,
+				B346FB1217FB339F0085B887 /* AudioToolbox.framework */,
+				B3A7A33917F858A800C4FEE6 /* ImageIO.framework */,
+				B30B6C8117EDDC27000D2D49 /* CoreMotion.framework */,
+				B34D3FDB17D8E555006B6A92 /* QuartzCore.framework */,
+				B34D3FD617D8DD03006B6A92 /* OpenGLES.framework */,
+				B34D3FB317D8DCF2006B6A92 /* UIKit.framework */,
+				B34D3FB517D8DCF2006B6A92 /* Foundation.framework */,
+				B34D3FB717D8DCF2006B6A92 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B34D3FB917D8DCF2006B6A92 /* ZeptoLabTestProject */ = {
+			isa = PBXGroup;
+			children = (
+				B3AEC37817D90F5100D4B039 /* Visual */,
+				B3AEC37717D90F4800D4B039 /* Classes */,
+				84DD321A17F0161E004C84D5 /* ZLConsts.h */,
+				84DD321B17F019EC004C84D5 /* ZLConsts.m */,
+				B3AEC37617D8FD0500D4B039 /* ZLTools.h */,
+				B36C40DF17F5CCAE0011CBBC /* Resources */,
+				B34D3FBA17D8DCF2006B6A92 /* Supporting Files */,
+				B346FB2817FB66530085B887 /* readme.md */,
+			);
+			path = ZeptoLabTestProject;
+			sourceTree = "<group>";
+		};
+		B34D3FBA17D8DCF2006B6A92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B34D3FBB17D8DCF2006B6A92 /* ZeptoLabTestProject-Info.plist */,
+				B34D3FBC17D8DCF2006B6A92 /* InfoPlist.strings */,
+				B34D3FBF17D8DCF2006B6A92 /* main.m */,
+				B34D3FC117D8DCF2006B6A92 /* ZeptoLabTestProject-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B36C40DF17F5CCAE0011CBBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B346FB1C17FB3B020085B887 /* background.mp3 */,
+				B346FB1D17FB3B020085B887 /* collision.m4a */,
+				B346FB1E17FB3B020085B887 /* death.m4a */,
+				B346FB1F17FB3B020085B887 /* missle.m4a */,
+				B36C40FD17F5D06D0011CBBC /* play.png */,
+				B36C40FF17F5D06D0011CBBC /* stop.png */,
+				B36C40FC17F5D06D0011CBBC /* pause.png */,
+				B36C40FE17F5D06D0011CBBC /* restart.png */,
+				B36C410517F5D1530011CBBC /* move.png */,
+				B36C410417F5D1530011CBBC /* missile.png */,
+				B35D5D0017F71D5A00F22FD3 /* missile_gray.png */,
+				B35D5D0117F71D5A00F22FD3 /* missile_red.png */,
+				B35D5D0417F721D800F22FD3 /* missile_green.png */,
+				B346FB2417FB43740085B887 /* volume-mute.png */,
+				B346FB2517FB43740085B887 /* volume-unmute.png */,
+				B36C40E017F5CCD20011CBBC /* Default.png */,
+				B36C40E217F5CCD20011CBBC /* Default~ipad.png */,
+				B36C40E417F5CCD20011CBBC /* spaceship29x29.png */,
+				B36C40E517F5CCD20011CBBC /* spaceship40x40.png */,
+				B36C40E617F5CCD20011CBBC /* spaceship50x50.png */,
+				B36C40E717F5CCD20011CBBC /* spaceship58x58.png */,
+				B36C40E817F5CCD20011CBBC /* spaceship72x72.png */,
+				B36C40E917F5CCD20011CBBC /* spaceship76x76.png */,
+				B36C40EA17F5CCD20011CBBC /* spaceship80x80.png */,
+				B36C40EB17F5CCD20011CBBC /* spaceship100x100.png */,
+				B36C40EC17F5CCD20011CBBC /* spaceship144x144.png */,
+				B36C40ED17F5CCD20011CBBC /* spaceship152x152.png */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B3AEC37717D90F4800D4B039 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84E78F1D17D9E12A0098A3D6 /* ZLObject.h */,
+				84E78F1E17D9E12A0098A3D6 /* ZLObject.m */,
+				840162A917DEE48A00EF5DEF /* ZLDynamicObject.h */,
+				840162AA17DEE48A00EF5DEF /* ZLDynamicObject.m */,
+				B35D5CEB17F70B7400F22FD3 /* ZLCollisionObject.h */,
+				B35D5CEC17F70B7400F22FD3 /* ZLCollisionObject.m */,
+				B3AEC37917D9101800D4B039 /* ZLPlayer.h */,
+				B3AEC37A17D9101800D4B039 /* ZLPlayer.m */,
+				B3AEC37C17D9103200D4B039 /* ZLStone.h */,
+				B3AEC37D17D9103200D4B039 /* ZLStone.m */,
+				B35D5CEE17F70CF000F22FD3 /* ZLStoneNormal.h */,
+				B35D5CEF17F70CF000F22FD3 /* ZLStoneNormal.m */,
+				B35D5CF117F70CFC00F22FD3 /* ZLStoneSmall.h */,
+				B35D5CF217F70CFC00F22FD3 /* ZLStoneSmall.m */,
+				B35D5D0617F72EE200F22FD3 /* ZLStoneBonus.h */,
+				B35D5D0717F72EE200F22FD3 /* ZLStoneBonus.m */,
+				B35D5D0917F72F3300F22FD3 /* ZLStonePenalty.h */,
+				B35D5D0A17F72F3300F22FD3 /* ZLStonePenalty.m */,
+				84FCDB6F17DEF9D900F81231 /* ZLBullet.h */,
+				84FCDB7017DEF9D900F81231 /* ZLBullet.m */,
+				B35D5CF417F70D7500F22FD3 /* ZLBulletNormal.h */,
+				B35D5CF517F70D7500F22FD3 /* ZLBulletNormal.m */,
+				B35D5CF717F70D8F00F22FD3 /* ZLBulletBonus.h */,
+				B35D5CF817F70D8F00F22FD3 /* ZLBulletBonus.m */,
+				B3D0C69117FAB928003A685D /* ZLBulletPenalty.h */,
+				B3D0C69217FAB928003A685D /* ZLBulletPenalty.m */,
+				B3AEC38217D9104C00D4B039 /* ZLGame.h */,
+				B3AEC38317D9104C00D4B039 /* ZLGame.m */,
+				B346FB0F17FB32790085B887 /* ZLGameAudio.h */,
+				B346FB1017FB32790085B887 /* ZLGameAudio.m */,
+				84CB584817E037D200A4E433 /* ZLGameViewInfo.h */,
+				84CB584917E037D300A4E433 /* ZLGameViewInfo.m */,
+				84E78F2317D9E2980098A3D6 /* Shapes */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		B3AEC37817D90F5100D4B039 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				B34D3FC217D8DCF2006B6A92 /* ZLAppDelegate.h */,
+				B34D3FC317D8DCF2006B6A92 /* ZLAppDelegate.m */,
+				B34D3FCB17D8DCF2006B6A92 /* ZLViewController.h */,
+				B34D3FCC17D8DCF2006B6A92 /* ZLViewController.m */,
+				B34D3FD817D8DDE4006B6A92 /* ZLView.h */,
+				B34D3FD917D8DDE4006B6A92 /* ZLView.m */,
+				B34D3FCE17D8DCF2006B6A92 /* ZLViewController.xib */,
+			);
+			name = Visual;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B34D3FAF17D8DCF2006B6A92 /* ZeptoLabTestProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B34D3FD317D8DCF2006B6A92 /* Build configuration list for PBXNativeTarget "ZeptoLabTestProject" */;
+			buildPhases = (
+				B34D3FAC17D8DCF2006B6A92 /* Sources */,
+				B34D3FAD17D8DCF2006B6A92 /* Frameworks */,
+				B34D3FAE17D8DCF2006B6A92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeptoLabTestProject;
+			productName = ZeptoLabTestProject;
+			productReference = B34D3FB017D8DCF2006B6A92 /* ZeptoLabTestProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B34D3FA817D8DCF2006B6A92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Igor Smirnov";
+				TargetAttributes = {
+					B34D3FAF17D8DCF2006B6A92 = {
+						DevelopmentTeam = Z5BDHTFRH5;
+					};
+				};
+			};
+			buildConfigurationList = B34D3FAB17D8DCF2006B6A92 /* Build configuration list for PBXProject "ZeptoLabTestProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B34D3FA717D8DCF2006B6A92;
+			productRefGroup = B34D3FB117D8DCF2006B6A92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B34D3FAF17D8DCF2006B6A92 /* ZeptoLabTestProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B34D3FAE17D8DCF2006B6A92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34D3FBE17D8DCF2006B6A92 /* InfoPlist.strings in Resources */,
+				B35D5D0517F721D800F22FD3 /* missile_green.png in Resources */,
+				B36C410617F5D1530011CBBC /* missile.png in Resources */,
+				B36C410017F5D06D0011CBBC /* pause.png in Resources */,
+				B346FB2017FB3B020085B887 /* background.mp3 in Resources */,
+				B36C40EE17F5CCD20011CBBC /* Default.png in Resources */,
+				B346FB2117FB3B020085B887 /* collision.m4a in Resources */,
+				B35D5D0317F71D5A00F22FD3 /* missile_red.png in Resources */,
+				B36C40F517F5CCD20011CBBC /* spaceship58x58.png in Resources */,
+				B36C40F217F5CCD20011CBBC /* spaceship29x29.png in Resources */,
+				B36C40F917F5CCD20011CBBC /* spaceship100x100.png in Resources */,
+				B36C40F017F5CCD20011CBBC /* Default~ipad.png in Resources */,
+				B346FB2717FB43740085B887 /* volume-unmute.png in Resources */,
+				B36C40FB17F5CCD20011CBBC /* spaceship152x152.png in Resources */,
+				B36C410217F5D06D0011CBBC /* restart.png in Resources */,
+				B346FB2617FB43740085B887 /* volume-mute.png in Resources */,
+				B36C40F317F5CCD20011CBBC /* spaceship40x40.png in Resources */,
+				B34D3FD017D8DCF2006B6A92 /* ZLViewController.xib in Resources */,
+				B36C410117F5D06D0011CBBC /* play.png in Resources */,
+				B35D5D0217F71D5A00F22FD3 /* missile_gray.png in Resources */,
+				B36C40F417F5CCD20011CBBC /* spaceship50x50.png in Resources */,
+				B346FB2217FB3B020085B887 /* death.m4a in Resources */,
+				B36C40F817F5CCD20011CBBC /* spaceship80x80.png in Resources */,
+				B36C40FA17F5CCD20011CBBC /* spaceship144x144.png in Resources */,
+				B346FB2317FB3B020085B887 /* missle.m4a in Resources */,
+				B36C410717F5D1530011CBBC /* move.png in Resources */,
+				B36C40F617F5CCD20011CBBC /* spaceship72x72.png in Resources */,
+				B36C40F717F5CCD20011CBBC /* spaceship76x76.png in Resources */,
+				B346FB2917FB66530085B887 /* readme.md in Resources */,
+				B36C410317F5D06D0011CBBC /* stop.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B34D3FAC17D8DCF2006B6A92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B34D3FC017D8DCF2006B6A92 /* main.m in Sources */,
+				B35D5CF917F70D8F00F22FD3 /* ZLBulletBonus.m in Sources */,
+				B346FB1117FB32790085B887 /* ZLGameAudio.m in Sources */,
+				B35D5CF317F70CFC00F22FD3 /* ZLStoneSmall.m in Sources */,
+				B34D3FC417D8DCF2006B6A92 /* ZLAppDelegate.m in Sources */,
+				B34D3FCD17D8DCF2006B6A92 /* ZLViewController.m in Sources */,
+				B35D5CF017F70CF000F22FD3 /* ZLStoneNormal.m in Sources */,
+				B34D3FDA17D8DDE4006B6A92 /* ZLView.m in Sources */,
+				B3AEC37B17D9101800D4B039 /* ZLPlayer.m in Sources */,
+				B3AEC37E17D9103200D4B039 /* ZLStone.m in Sources */,
+				B3AEC38417D9104C00D4B039 /* ZLGame.m in Sources */,
+				B3D0C69317FAB928003A685D /* ZLBulletPenalty.m in Sources */,
+				B35D5CF617F70D7500F22FD3 /* ZLBulletNormal.m in Sources */,
+				B35D5CED17F70B7400F22FD3 /* ZLCollisionObject.m in Sources */,
+				84E78F1F17D9E12A0098A3D6 /* ZLObject.m in Sources */,
+				84E78F2217D9E2930098A3D6 /* ZLShape.m in Sources */,
+				84E78F2617D9E2B00098A3D6 /* ZLPlayerShape.m in Sources */,
+				B35D5CFF17F70E1800F22FD3 /* ZLStoneShapeSmall.m in Sources */,
+				B35D5D0817F72EE200F22FD3 /* ZLStoneBonus.m in Sources */,
+				B35D5D0B17F72F3300F22FD3 /* ZLStonePenalty.m in Sources */,
+				84E78F2917D9E2BB0098A3D6 /* ZLStoneShape.m in Sources */,
+				84E78F2C17D9E2C90098A3D6 /* ZLGameShape.m in Sources */,
+				840162AB17DEE48A00EF5DEF /* ZLDynamicObject.m in Sources */,
+				B35D5CFC17F70E0900F22FD3 /* ZLStoneShapeNormal.m in Sources */,
+				84FCDB7117DEF9D900F81231 /* ZLBullet.m in Sources */,
+				84FCDB7417DF01F100F81231 /* ZLBulletShape.m in Sources */,
+				84CB584A17E037D300A4E433 /* ZLGameViewInfo.m in Sources */,
+				84DD321C17F019EC004C84D5 /* ZLConsts.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B34D3FBC17D8DCF2006B6A92 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B34D3FBD17D8DCF2006B6A92 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B34D3FCE17D8DCF2006B6A92 /* ZLViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B34D3FCF17D8DCF2006B6A92 /* en */,
+			);
+			name = ZLViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B34D3FD117D8DCF2006B6A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B34D3FD217D8DCF2006B6A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B34D3FD417D8DCF2006B6A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZeptoLabTestProject/ZeptoLabTestProject-Prefix.pch";
+				INFOPLIST_FILE = "ZeptoLabTestProject/ZeptoLabTestProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B34D3FD517D8DCF2006B6A92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZeptoLabTestProject/ZeptoLabTestProject-Prefix.pch";
+				INFOPLIST_FILE = "ZeptoLabTestProject/ZeptoLabTestProject-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B34D3FAB17D8DCF2006B6A92 /* Build configuration list for PBXProject "ZeptoLabTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34D3FD117D8DCF2006B6A92 /* Debug */,
+				B34D3FD217D8DCF2006B6A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B34D3FD317D8DCF2006B6A92 /* Build configuration list for PBXNativeTarget "ZeptoLabTestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34D3FD417D8DCF2006B6A92 /* Debug */,
+				B34D3FD517D8DCF2006B6A92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B34D3FA817D8DCF2006B6A92 /* Project object */;
+}
